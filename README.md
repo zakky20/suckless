@@ -12,11 +12,11 @@
   - vanitygaps
   - warp
 
-# Dmenu Patches
-barheight
-border
-center
-grid
+# Dmenu Patches:
+  - barheight
+  - border
+  - center
+  - grid
 
 ## 📋 Dependencies
 ```sh
