@@ -1,3 +1,4 @@
-![dwm-logo-bordered](https://github.com/user-attachments/assets/9733875d-2412-47ac-bca9-e06bb1c18386)
+<div align="center">
+  <img src="./dwm-logo-bordered.png" alt="dwm-logo-bordered" width="195" height="90"/>
 
-# dwm - suckless dynamic window manager 
+  # dwm - dynamic window manager
