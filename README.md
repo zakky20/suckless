@@ -1,9 +1,5 @@
 # dwm - suckless dynamic window manager
 This is my **Personal Configurations** with following patches:
-
-<details>
-  <summary>Click to see the patches list</summary>
-
   - activetagindicator
   - alwayscenter
   - attachbelow
@@ -14,7 +10,6 @@ This is my **Personal Configurations** with following patches:
   - unfloatvisible
   - vanitygaps
   - warp
-<details>
 
 ## 📋 Dependencies
 ```sh
@@ -30,5 +25,5 @@ make install  && \
 sudo make install
 ```
 
-## DO NOT FORGET !!
+## !!! DO NOT FORGET !!!
 add `exec dwm` in `.xinitrc` file
