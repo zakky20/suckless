@@ -1,5 +1,6 @@
 # dwm - suckless dynamic window manager
-This is my **Personal Configurations** with following patches:
+
+# Dwm Patches:
   - activetagindicator
   - alwayscenter
   - attachbelow
@@ -10,6 +11,12 @@ This is my **Personal Configurations** with following patches:
   - unfloatvisible
   - vanitygaps
   - warp
+
+# Dmenu Patches
+barheight
+border
+center
+grid
 
 ## 📋 Dependencies
 ```sh
