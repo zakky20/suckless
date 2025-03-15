@@ -2,7 +2,7 @@
 This is my **Personal Configurations** with following patches:
 
 <details>
-  <summary>Click to see the list of patches</summary>
+  <summary>Click to see the patches list</summary>
 
   - activetagindicator
   - alwayscenter
