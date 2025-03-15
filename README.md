@@ -22,9 +22,9 @@ sudo pacman -S base-devel git xorg-server xorg-xinit xorg-xrandr xorg-xrdb libx1
 
 ## 🛠️ Installation
 ```
-git clone https://github.com/zakky20/suckless.git && \
-cd suckless && \
-make install  && \
+git clone https://github.com/zakky20/suckless.git
+cd suckless
+make install
 sudo make install
 ```
 
