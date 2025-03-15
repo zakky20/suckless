@@ -1,4 +1,5 @@
-# dwm - suckless dynamic window manager
+# dwm - suckless dynamic window manager ![dwm-logo-bordered](https://github.com/user-attachments/assets/75410bc9-4d4d-4736-b9d1-5d17f4657e9f)
+
 
 # Dwm Patches:
   - activetagindicator
