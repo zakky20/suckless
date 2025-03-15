@@ -1,4 +1,4 @@
-# dwm - suckless's dynamic window manager
+# dwm - suckless dynamic window manager
 This is my **Personal Configurations** with following patches:
 
 <details>
