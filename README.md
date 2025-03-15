@@ -12,12 +12,6 @@
   - vanitygaps
   - warp
 
-# Dmenu Patches:
-  - barheight
-  - border
-  - center
-  - grid
-
 ## 📋 Dependencies
 ```sh
 sudo pacman -S base-devel git xorg-server xorg-xinit xorg-xrandr xorg-xrdb libx11 libxft libxinerama imlib2
