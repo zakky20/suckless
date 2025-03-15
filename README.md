@@ -14,7 +14,6 @@ This is my **Personal Configurations** with following patches:
   - unfloatvisible
   - vanitygaps
   - warp
-<details>
 
 ## 📋 Dependencies
 ```sh
