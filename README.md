@@ -13,14 +13,12 @@
   - vanitygaps
   - warp
 
-## 📋 Dependencies
-```sh
+## 📋 Dependencies:
+```
 sudo pacman -S base-devel git xorg-server xorg-xinit xorg-xrandr xorg-xrdb libx11 libxft libxinerama imlib2
 ```
 
 ## 🛠️ Installation
-Clone the repository and compile with make
-
 ```
 git clone https://github.com/zakky20/suckless.git && \
 cd suckless && \
