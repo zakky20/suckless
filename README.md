@@ -1,1 +1,1 @@
-  ![dwm-logo-png_seeklogo-495382](https://github.com/user-attachments/assets/5ef41dc5-f336-49b6-bcda-501c78f90dcd)
+![dwm-logo-bordered](https://github.com/user-attachments/assets/9733875d-2412-47ac-bca9-e06bb1c18386)
