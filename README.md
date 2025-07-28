@@ -1,4 +1,4 @@
 # suckless
 My TokyoNight Suckless Configs!
 
-![Uploading 2025-07-28-111616_1920x1080_scrot.png…]()
+<img width="1920" height="1080" alt="rice" src="https://github.com/user-attachments/assets/9ac40cf5-37b9-42c0-bf8c-7cd603cb3e74" />
