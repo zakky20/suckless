@@ -17,8 +17,14 @@
 
 ## Installation
 `git clone https://github.com/zakky20/suckless.git`
+##
 `cd suckless/dwm && sudo make install`
+##
 `cd suckless/dmenu && sudo make install`
+##
 `cd suckless/st && sudo make install`
+##
 `cd suckless/slstatus && sudo make install`
+##
 `cd suckless/slock && sudo make install`
+##
