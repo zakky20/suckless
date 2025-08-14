@@ -7,11 +7,11 @@
 </p>
 
 ## Requirements / Dependencies
-# Arch
+* Arch
 `sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xrdb libx11 libxft libxinerama imlib2 harfbuzz`
-# Debian
+* Debian
 `sudo apt install libxcb-res0-dev libx11-xcb-dev libx11-dev libxcb1-dev libxinerama-dev libfontconfig1-dev libxft-dev`
-# Gentoo
+* Gentoo
 `sudo emerge -va xorg xorg-drivers libX11 libXft libXinerama freetype fontconfig harfbuzz`
 ##
 
