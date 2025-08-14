@@ -1,2 +1,20 @@
 <h1 align="center">Suckless</h1>
 <p align="center">My tokyonight theme suckless utils!</p>
+
+##
+<p align="center">
+<img src="./preview.gif" alt="Video Preview" width="500px">
+</p>
+
+## Requirements / Dependencies
+`sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xrdb libx11 libxft libxinerama imlib2 harfbuzz`
+`sudo apt install libxcb-res0-dev libx11-xcb-dev libx11-dev libxcb1-dev libxinerama-dev libfontconfig1-dev libxft-dev`
+`sudo emerge -va xorg xorg-drivers libX11 libXft libXinerama freetype fontconfig harfbuzz`
+
+## Installation
+`git clone https://github.com/zakky20/suckless.git`
+`cd suckless/dwm && sudo make install`
+`cd suckless/dmenu && sudo make install`
+`cd suckless/st && sudo make install`
+`cd suckless/slstatus && sudo make install`
+`cd suckless/slock && sudo make install`
