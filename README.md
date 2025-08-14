@@ -1,2 +1,2 @@
-# suckless
-All of my suckless utils (dwm,dmenu,st,slstatus,slock) all in one repository!
+<h1 align="center">Suckless</h1>
+<p align="center">My tokyonight theme suckless utils!</p>
