@@ -8,16 +8,16 @@
 
 // Settings For Patches 
 static const unsigned int borderpx  = 0;    /* Border pixel of windows */
-static const unsigned int snap      = 32;   /* Snap pixel */
+static const unsigned int snap      = 0;    /* Snap pixel */
 static const int showbar            = 1;    /* 0 means no bar */
 static const int topbar             = 0;    /* 0 means bottom bar */
-static const int vertpad            = 15;   /* Horizontal padding around the bar */
-static const int sidepad            = 325;   /* Vertical padding around the bar */
-static const int user_bh            = 53;   /* Or whatever value you set */
-static const unsigned int gappih    = 15;   /* Horizontal inner gaps (space between windows)*/
-static const unsigned int gappiv    = 15;   /* Vertical inner gaps (space between windows) */
-static const unsigned int gappoh    = 15;   /* Horizontal outer gaps (space around windows) */
-static const unsigned int gappov    = 15;   /* Vertical outer gaps (space around windows) */
+static const int vertpad            = 17;   /* Horizontal padding around the bar */
+static const int sidepad            = 350;  /* Vertical padding around the bar */
+static const int user_bh            = 60;   /* Or whatever value you set */
+static const unsigned int gappih    = 17;   /* Horizontal inner gaps (space between windows)*/
+static const unsigned int gappiv    = 17;   /* Vertical inner gaps (space between windows) */
+static const unsigned int gappoh    = 17;   /* Horizontal outer gaps (space around windows) */
+static const unsigned int gappov    = 17;   /* Vertical outer gaps (space around windows) */
 static int enablegaps               = 1;    /* Enable or disable gaps */
 static int smartgaps                = 0;    /* Enable smart gaps */
 
@@ -33,11 +33,7 @@ static const char *colors[][3]      = {
 };
 
 // Tags
-// static const char *tags[] = { "www", "chat", "mus", "dev", "doc", "sys", "vid", "gfx", "vbox" };
-// static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-static const char *tags[] = { "󰈹 ", " ", " ", " ", " " };
-// static const char *tags[] = { "1", "2", "3", "4", "5" };
-// static const char *tags[] = { " 󰈹 ", "  ", "  ", "  ", "  " };
+static const char *tags[] = { " ", " ", " ", " ", " ", " ", " ", " ", "" };
 
 // Tag Rules
 static const Rule rules[] = {
@@ -90,6 +86,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
         { MODKEY|ShiftMask,             XK_l,      spawn,          {.v = lockcmd } }, 
         { MODKEY,                       XK_g,      spawn,          {.v = (const char*[]){ "/usr/local/bin/randomwallpaper", NULL } } },
+	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = (const char*[]){ "/usr/local/bin/selectwallpaper", NULL } } },
         { MODKEY,                       XK_p,      spawn,          {.v = (const char*[]){ "/usr/local/bin/screenshot", NULL } } },
 	{ MODKEY,                       XK_r,      spawn,          {.v = (const char*[]){ "/usr/local/bin/record", NULL } } },
         { MODKEY,                       XK_n,      spawn,          {.v = (const char*[]){ "/usr/local/bin/bcn", NULL } } },
