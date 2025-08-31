@@ -3,7 +3,7 @@
 static int border_width = 3;
 static int centered = 1;
 static int bh = 5; // Înălțimea unei linii, poți ajusta această valoare
-static int min_width = 50;
+static int min_width = 10;
 static float menu_height_ratio = 2.0;
 static int bh, mw, mh;
 static int dmx = 300;
