@@ -57,12 +57,15 @@ static const char unknown_str[] = "";
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
 static const struct arg args[] = {
-  { run_command, "   %s ", "bash -c \"playerctl -p spotify,firefox,mpv metadata --format '{{ title }}' 2>/dev/null || echo \"" },
-  { run_command, "   %s ", "bash -c \"[ \\\"$(bluetoothctl info | grep 'Device' )\\\" ] && echo G435 || echo OFF\"" },
-  { cpu_perc, "   %s%% ",        NULL                         },
-  { ram_perc, "   %s%% ",        NULL                         },
+  { cpu_perc, "   %s%% ",        NULL                         },
+  { ram_used, "   %s ",          NULL                         },
+  { disk_free, " 󰋊  %s ",         "/"                          },
+  { temp,      "  %s°C ",        "/sys/class/thermal/thermal_zone1/temp" },
   { run_command, "   %s ",       "pamixer --get-volume-human" },
+  { run_command, "   %s ",       "bash -c \"[ \\\"$(bluetoothctl info | grep 'Device' )\\\" ] && echo G435 || echo OFF\"" },
+  { run_command, " 󰚰  %s ",       "checkupdates | wc -l"      },
   { uptime,      "   %s ",       NULL                         },
-  { datetime, "%s", "   %a %b %d ",                              },
-  { datetime, "%s", " 󰥔  %H:%M:%S ",                               },
+  { datetime, "%s", "   %d.%m ",                              },
+  { datetime, "%s", " 󰥔  %R ",                                 },
+
 };
