@@ -1,6 +1,6 @@
 static char *font = "Iosevka Nerd Font Mono:pixelsize=16:antialias=true:autohint=true:style=Bold";
 static char *font2[] = { "JoyPixels:pixelsize=16:antialias=true:autohint=true:style=Bold" };
-static int borderpx = 17;
+static int borderpx = 13;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -140,7 +140,8 @@ unsigned int background = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 4;
+
+static unsigned int cursorshape = 6;
 
 /*
  * Default columns and rows numbers
