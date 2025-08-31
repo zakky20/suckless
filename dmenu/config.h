@@ -1,5 +1,5 @@
 static int topbar = 1;
-static const int user_bh = 10;
+static const int user_bh = 15;
 static unsigned int lines = 10;
 static int columns = 1; 
 
