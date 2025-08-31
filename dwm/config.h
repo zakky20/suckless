@@ -11,13 +11,13 @@ static const unsigned int borderpx  = 0;    /* Border pixel of windows */
 static const unsigned int snap      = 0;    /* Snap pixel */
 static const int showbar            = 1;    /* 0 means no bar */
 static const int topbar             = 0;    /* 0 means bottom bar */
-static const int vertpad            = 17;   /* Horizontal padding around the bar */
-static const int sidepad            = 350;  /* Vertical padding around the bar */
-static const int user_bh            = 60;   /* Or whatever value you set */
-static const unsigned int gappih    = 17;   /* Horizontal inner gaps (space between windows)*/
-static const unsigned int gappiv    = 17;   /* Vertical inner gaps (space between windows) */
-static const unsigned int gappoh    = 17;   /* Horizontal outer gaps (space around windows) */
-static const unsigned int gappov    = 17;   /* Vertical outer gaps (space around windows) */
+static const int vertpad            = 15;   /* Horizontal padding around the bar */
+static const int sidepad            = 325;  /* Vertical padding around the bar */
+static const int user_bh            = 65;   /* Or whatever value you set */
+static const unsigned int gappih    = 15;   /* Horizontal inner gaps (space between windows)*/
+static const unsigned int gappiv    = 15;   /* Vertical inner gaps (space between windows) */
+static const unsigned int gappoh    = 15;   /* Horizontal outer gaps (space around windows) */
+static const unsigned int gappov    = 15;   /* Vertical outer gaps (space around windows) */
 static int enablegaps               = 1;    /* Enable or disable gaps */
 static int smartgaps                = 0;    /* Enable smart gaps */
 
@@ -37,14 +37,14 @@ static const char *tags[] = { " ", " ", " ", " ", " ", " ", "�
 
 // Tag Rules
 static const Rule rules[] = {
-  /* class      instance    title       tags mask     isfloating   monitor */
-  { "protonvpn-app", NULL,  NULL,       0,            1,           -1 },
-  { "Gimp",     NULL,       NULL,       1 << 4,       0,           -1 },
-  { "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+  { "Firefox",  NULL,       NULL,       1 << 0,       0,           -1 },
+  { "discord",  NULL,       NULL,       1 << 2,       0,           -1 },
+  { "Spotify",  NULL,       NULL,       1 << 3,       0,           -1 },
+  { "gimp",     NULL,       NULL,       1 << 6,       0,           -1 },
 };
 
 // Layout stuff
-static const float mfact     = 0.5; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.49; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
@@ -84,27 +84,27 @@ static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
-        { MODKEY|ShiftMask,             XK_l,      spawn,          {.v = lockcmd } }, 
-        { MODKEY,                       XK_g,      spawn,          {.v = (const char*[]){ "/usr/local/bin/randomwallpaper", NULL } } },
+    { MODKEY|ShiftMask,             XK_l,      spawn,          {.v = lockcmd } }, 
+    { MODKEY,                       XK_g,      spawn,          {.v = (const char*[]){ "/usr/local/bin/randomwallpaper", NULL } } },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = (const char*[]){ "/usr/local/bin/selectwallpaper", NULL } } },
-        { MODKEY,                       XK_p,      spawn,          {.v = (const char*[]){ "/usr/local/bin/screenshot", NULL } } },
+    { MODKEY,                       XK_p,      spawn,          {.v = (const char*[]){ "/usr/local/bin/screenshot", NULL } } },
 	{ MODKEY,                       XK_r,      spawn,          {.v = (const char*[]){ "/usr/local/bin/record", NULL } } },
-        { MODKEY,                       XK_n,      spawn,          {.v = (const char*[]){ "/usr/local/bin/bcn", NULL } } },
+    { MODKEY,                       XK_n,      spawn,          {.v = (const char*[]){ "/usr/local/bin/bcn", NULL } } },
 	{ MODKEY|ShiftMask,             XK_c,      spawn,          {.v = (const char*[]){ "/usr/local/bin/configs", NULL } } },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          {.v = (const char*[]){ "/usr/local/bin/pdfs", NULL } } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = (const char*[]){ "/usr/local/bin/emoji", NULL } } },
 	{ MODKEY|ShiftMask,             XK_t,      spawn,          {.v = (const char*[]){ "/usr/local/bin/notflix", NULL } } },
-        { MODKEY,                       XK_a,      spawn,          {.v = (const char*[]){ "anydesk",  NULL } } },
-        { MODKEY,                       XK_w,      spawn,          {.v = (const char*[]){ "firefox", NULL } } },
-        { MODKEY,                       XK_s,      spawn,          {.v = (const char*[]){ "spotify", NULL } } },
-        { MODKEY,                       XK_c,      spawn,          {.v = (const char*[]){ "discord", NULL } } },
-        { MODKEY,                       XK_x,      spawn,          {.v = (const char*[]){ "thunar",  NULL } } },
-        { 0,           XF86XK_AudioMute,           spawn,          SHCMD("pactl set-sink-mute 0 toggle") },
+    { MODKEY,                       XK_a,      spawn,          {.v = (const char*[]){ "anydesk",  NULL } } },
+    { MODKEY,                       XK_w,      spawn,          {.v = (const char*[]){ "firefox", NULL } } },
+    { MODKEY,                       XK_s,      spawn,          {.v = (const char*[]){ "spotify", NULL } } },
+    { MODKEY,                       XK_c,      spawn,          {.v = (const char*[]){ "discord", NULL } } },
+    { MODKEY,                       XK_x,      spawn,          {.v = (const char*[]){ "thunar",  NULL } } },
+    { 0,           XF86XK_AudioMute,           spawn,          SHCMD("pactl set-sink-mute 0 toggle") },
 	{ 0,           XF86XK_AudioLowerVolume,    spawn,          SHCMD("pactl set-sink-volume 0 -5%") },
-        { 0,           XF86XK_AudioRaiseVolume,    spawn,          SHCMD("pactl set-sink-volume 0 +5%") },
+    { 0,           XF86XK_AudioRaiseVolume,    spawn,          SHCMD("pactl set-sink-volume 0 +5%") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,      movestack,      {.i = +1 } },
-        { MODKEY|ShiftMask,             XK_k,      movestack,      {.i = -1 } },
+    { MODKEY|ShiftMask,             XK_k,      movestack,      {.i = -1 } },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
