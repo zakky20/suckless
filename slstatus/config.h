@@ -57,15 +57,17 @@ static const char unknown_str[] = "";
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
 static const struct arg args[] = {
-  { cpu_perc, "   %s%% ",        NULL                         },
-  { ram_used, "   %s ",          NULL                         },
-  { disk_free, " 󰋊  %s ",         "/"                          },
+  // { kernel_release, "  %s ",    "uname -r"                   },
+  // { load_avg, "  %s ",          NULL                         },
+  { cpu_perc, "  %s%% ",        NULL                         },
+  { ram_used, "  %s ",          NULL                         },
+  { disk_free, " 󰋊 %s ",         "/"                          },
   { temp,      "  %s°C ",        "/sys/class/thermal/thermal_zone1/temp" },
-  { run_command, "   %s ",       "pamixer --get-volume-human" },
-  { run_command, "   %s ",       "bash -c \"[ \\\"$(bluetoothctl info | grep 'Device' )\\\" ] && echo G435 || echo OFF\"" },
-  { run_command, " 󰚰  %s ",       "checkupdates | wc -l"      },
-  { uptime,      "   %s ",       NULL                         },
-  { datetime, "%s", "   %d.%m ",                              },
-  { datetime, "%s", " 󰥔  %R ",                                 },
-
+  { run_command, "  %s ",       "pamixer --get-volume-human" },
+  // { run_command, "  %s%% ",     "wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | grep -o '[0-9.]*' | awk '{print int($1*100)}'" },
+  { run_command, "  %s ",       "bash -c \"[ \\\"$(bluetoothctl info | grep 'Device' )\\\" ] && echo G435 || echo OFF\"" },
+  { run_command, " 󰚰 %s ",       "xbps-install -un | wc -l"   },
+  { uptime,      "  %s ",       NULL                         },
+  { datetime, "%s", "  %d.%m ",                              },
+  { datetime, "%s", " 󰥔 %R ",                                 },
 };
