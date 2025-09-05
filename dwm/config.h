@@ -13,7 +13,7 @@ static const int showbar            = 1;    /* 0 means no bar */
 static const int topbar             = 0;    /* 0 means bottom bar */
 static const int vertpad            = 15;   /* Horizontal padding around the bar */
 static const int sidepad            = 325;  /* Vertical padding around the bar */
-static const int user_bh            = 65;   /* Or whatever value you set */
+static const int user_bh            = 70;   /* Or whatever value you set */
 static const unsigned int gappih    = 15;   /* Horizontal inner gaps (space between windows)*/
 static const unsigned int gappiv    = 15;   /* Vertical inner gaps (space between windows) */
 static const unsigned int gappoh    = 15;   /* Horizontal outer gaps (space around windows) */
@@ -22,8 +22,8 @@ static int enablegaps               = 1;    /* Enable or disable gaps */
 static int smartgaps                = 0;    /* Enable smart gaps */
 
 // Fonts
-static const char *fonts[]          = { "Iosevka Nerd Font:size=11:style=Bold" };
-static const char dmenufont[]       = "Iosevka Nerd Font:size=11:style=Bold";
+static const char *fonts[] = { "Iosevka:size=11:style=Bold", "Iosevka Nerd Font Propo:size=11:style=Bold" };
+static const char dmenufont[] = "Iosevka Nerd Font:size=11:style=Bold";
 
 // Declare Each Color
 static const char *colors[][3]      = {
@@ -33,7 +33,8 @@ static const char *colors[][3]      = {
 };
 
 // Tags
-static const char *tags[] = { " ", " ", " ", " ", " ", " ", " ", " ", "" };
+static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+// static const char *tags[] = { " ", " ", " ", " ", " ", " ", " ", " ", "" };
 
 // Tag Rules
 static const Rule rules[] = {
@@ -44,17 +45,17 @@ static const Rule rules[] = {
 };
 
 // Layout stuff
-static const float mfact     = 0.49; /* factor of master area size [0.05..0.95] */
-static const int nmaster     = 1;    /* number of clients in master area */
-static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
-static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
+static const float mfact     = 0.48; 
+static const int nmaster     = 1;    
+static const int resizehints = 1;   
+static const int lockfullscreen = 1; 
 
 // Layouts
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "  ",      tile },    /* first entry is default */
-	{ "  ",      NULL },    /* no layout function means floating behavior */
-	{ "  ",      monocle },
+	{ "",      tile },    
+	{ "",      NULL },   
+	{ "",      monocle },
 };
 
 // Key Definitions
@@ -137,6 +138,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
+// Buttons
 static const Button buttons[] = {
 	/* click                event mask      button          function        argument */
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
